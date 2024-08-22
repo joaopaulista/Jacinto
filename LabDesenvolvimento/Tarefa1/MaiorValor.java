@@ -6,7 +6,8 @@ public class MaiorValor {
         
         int valor1 = 45;
         int valor2 = 20;
-   
+
+        // Operador Ternário
         int maior = (valor1 > valor2) ? valor1 : valor2;
    
         System.out.println("O maior valor é: " + maior);
