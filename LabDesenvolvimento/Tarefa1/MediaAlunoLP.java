@@ -32,5 +32,7 @@ public class MediaAlunoLP {
         double media = (notaBase * 0.5) + fatorAjusteAPI + X + (SUB * 0.2);
 
         System.out.printf("A média final do aluno é: %.2f%n", media);
+
+        scanner.close();
     }
 }
