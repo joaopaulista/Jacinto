@@ -31,5 +31,7 @@ public class SalarioTrabalho {
             System.out.print("Seu salário é: R$");
             System.out.print(salario);
         }
+        scannerHoraMes.close();
+        scannerSalarioHora.close();
     }
 }

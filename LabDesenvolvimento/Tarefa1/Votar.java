@@ -20,5 +20,7 @@ public class Votar {
         } else {
             System.out.println("Você NÃO PODERÁ votar!");
         }
+        leituraAno.close();
+        leituraIdade.close();
     }
 }

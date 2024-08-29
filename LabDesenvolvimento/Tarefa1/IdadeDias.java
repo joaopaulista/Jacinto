@@ -41,5 +41,12 @@ public class IdadeDias {
 
         System.out.print("SUA IDADE EM DIAS É: ");
         System.out.print(idade);
+
+        scannerAno.close();
+        scannerData.close();
+        scannerMes.close();
+        scannerMesNasc.close();
+        scannerAnoNasc.close();
+        scannerDiaNasc.close();
     }
 }

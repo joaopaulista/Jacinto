@@ -14,5 +14,6 @@ public class ValorPN {
         } else {
             System.out.println("O valor é NEGATIVO");
         }
+        leituraValor.close();
     }
 }

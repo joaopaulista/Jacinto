@@ -24,5 +24,7 @@ public class MediaAluno {
             System.out.print("Ficando com uma média de: ");
             System.out.print(media);
         }
+        leituraNota1.close();
+        leituraNota2.close();
     }
 }

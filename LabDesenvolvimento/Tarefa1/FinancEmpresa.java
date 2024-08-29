@@ -22,5 +22,9 @@ public class FinancEmpresa {
 
         System.out.printf("Despesa Total no Trimestre(JAN, FEV, MAR): R$: %.2f%%\n", gastoTotal);
         System.out.printf("Média Mensal de Gastos no Trimestre(JAN, FEV, MAR): R$ %.2f%%\n", gastoMediaMensal);
+
+        leituraFev.close();
+        leituraJan.close();
+        leituraMar.close();
     }
 }

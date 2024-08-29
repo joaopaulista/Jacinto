@@ -16,5 +16,7 @@ public class Temperatura {
         System.out.print("A temperatura aproximadamente em Celsius é: ");
         System.out.print(cel);
         System.out.print("°C");
+
+        scanner.close();
     }
 }

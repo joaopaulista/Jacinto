@@ -4,27 +4,22 @@ import java.util.Scanner;
 
 public class PercentualVotos {
     public static void main(String[] args) {
-        Scanner leituraEleitores = new Scanner(System.in);
-        Scanner leituraBrancos = new Scanner(System.in);
-        Scanner leituraNulos = new Scanner(System.in);
-        Scanner leituraValidos = new Scanner(System.in);
+        Scanner leitura = new Scanner(System.in);
 
         System.out.println("Insira o número total de eleitores no município:");
-        int eleitores = leituraEleitores.nextInt();
+        int eleitores = leitura.nextInt();
         System.out.println("Insira a quantidade de VOTOS BRANCOS:");
-        int brancos = leituraBrancos.nextInt();
+        int brancos = leitura.nextInt();
         System.out.println("Insira a quantidade de VOTOS NULOS:");
-        int nulos = leituraNulos.nextInt();
+        int nulos = leitura.nextInt();
         System.out.println("Insira a quantidade de VOTOS VÁLIDOS:");
-        int validos = leituraValidos.nextInt();
+        int validos = leitura.nextInt();
 
         int totalVotos = brancos + nulos + validos;
 
         if (totalVotos != eleitores) {
             System.out.println("O total de votos não corresponde ao número total de eleitores.");
-            return;
-        }
-
+        } else {
         double percentualBrancos = (brancos * 100.0) / eleitores;
         double percentualNulos = (nulos * 100.0) / eleitores;
         double percentualValidos = (validos * 100.0) / eleitores;
@@ -32,5 +27,7 @@ public class PercentualVotos {
         System.out.printf("Percentual de votos brancos: %.2f%%\n", percentualBrancos);
         System.out.printf("Percentual de votos nulos: %.2f%%\n", percentualNulos);
         System.out.printf("Percentual de votos válidos: %.2f%%\n", percentualValidos);
+        }
+        leitura.close();
     }
 }

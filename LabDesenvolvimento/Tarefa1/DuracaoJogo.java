@@ -22,5 +22,7 @@ public class DuracaoJogo {
             System.out.print("A duração da partida de xadrez foi de: ");
             System.out.print(duracaoJogoXadrez + "hora(s)");
         }
+        leituraFinal.close();
+        leituraInicio.close();
     }
 }

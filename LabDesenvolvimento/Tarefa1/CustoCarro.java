@@ -16,5 +16,7 @@ public class CustoCarro {
 
         System.out.print("O valor do carro é: R$");
         System.out.print(valorCarro);
+
+        leituraValor.close();
     }
 }

@@ -28,5 +28,10 @@ public class VendedorCarros {
 
         System.out.print("Seu Salário Final é de R$");
         System.out.print(salarioFinal);
+
+        leituraCarrosVendidos.close();
+        leituraSalarioFix.close();
+        leituraValorPorCarroVendido.close();
+        leituraValorVendas.close();
     }
 }

@@ -25,5 +25,6 @@ public class CompraMaca {
             System.out.print("Preço unitário da Maçã: R$");
             System.out.print(precoMaca);
         }
+        leituraQtMacaCompra.close();
     }
 }

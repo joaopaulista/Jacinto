@@ -19,5 +19,8 @@ public class CalcularSalario {
 
         System.out.print("Após o reajuste, seu salário é de R$");
         System.out.print(salarioAjustado);
+
+        leituraSalario.close();
+        leituraPercentual.close();
     }
 }
