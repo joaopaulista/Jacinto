@@ -5,14 +5,13 @@ import java.util.Scanner;
 public class Votar {
     
     public static void main(String[] args) {
-        Scanner leituraAno = new Scanner(System.in);
-        Scanner leituraIdade = new Scanner(System.in);
+        Scanner leitura = new Scanner(System.in);
 
         System.out.println("Digite o ano atual:");
-        int anoAtual = leituraAno.nextInt();
+        int anoAtual = leitura.nextInt();
 
         System.out.println("Digite o ano em que você nasceu:");
-        int anoNasceu = leituraIdade.nextInt();
+        int anoNasceu = leitura.nextInt();
 
         int idade = anoAtual - anoNasceu;
         if (idade > 18) {
@@ -20,7 +19,6 @@ public class Votar {
         } else {
             System.out.println("Você NÃO PODERÁ votar!");
         }
-        leituraAno.close();
-        leituraIdade.close();
+        leitura.close();
     }
 }

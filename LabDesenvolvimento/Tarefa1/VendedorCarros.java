@@ -4,22 +4,19 @@ import java.util.Scanner;
 
 public class VendedorCarros {
     public static void main(String[] args) {
-        Scanner leituraValorVendas = new Scanner(System.in);
-        Scanner leituraCarrosVendidos = new Scanner(System.in);
-        Scanner leituraValorPorCarroVendido = new Scanner(System.in);
-        Scanner leituraSalarioFix = new Scanner(System.in);
+        Scanner leitura = new Scanner(System.in);
 
         System.out.println("Insira o Valor Total de suas Vendas no mês:");
-        Double valorVendas = leituraValorVendas.nextDouble();
+        Double valorVendas = leitura.nextDouble();
 
         System.out.println("Insira a Quantidade de Carros Vendidos no mês:");
-        int carrosVendidos = leituraCarrosVendidos.nextInt();
+        int carrosVendidos = leitura.nextInt();
 
         System.out.println("Insira o Valor do seu Salário fixo:");
-        Double salarioFix = leituraSalarioFix.nextDouble();
+        Double salarioFix = leitura.nextDouble();
 
         System.out.println("Insira o Valor por cada Carro Vendido:");
-        Double comissaoPorCarro = leituraValorPorCarroVendido.nextDouble();
+        Double comissaoPorCarro = leitura.nextDouble();
 
         // Tratamento dos Dados - SALÁRIO FINAL
         Double salarioCarrosVendidos = comissaoPorCarro*carrosVendidos;
@@ -29,9 +26,6 @@ public class VendedorCarros {
         System.out.print("Seu Salário Final é de R$");
         System.out.print(salarioFinal);
 
-        leituraCarrosVendidos.close();
-        leituraSalarioFix.close();
-        leituraValorPorCarroVendido.close();
-        leituraValorVendas.close();
+        leitura.close();
     }
 }

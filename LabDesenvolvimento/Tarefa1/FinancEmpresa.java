@@ -4,18 +4,16 @@ import java.util.Scanner;
 
 public class FinancEmpresa {
     public static void main(String[] args) {
-        Scanner leituraJan = new Scanner(System.in);
-        Scanner leituraFev = new Scanner(System.in);
-        Scanner leituraMar = new Scanner(System.in);
+        Scanner leitura = new Scanner(System.in);
 
         System.out.println("Insira o valor gasto no mês de Janeiro:");
-        Double gastosJan = leituraJan.nextDouble();
+        Double gastosJan = leitura.nextDouble();
 
         System.out.println("Insira o valor gasto no mês de Fevereiro:");
-        Double gastosFev = leituraFev.nextDouble();
+        Double gastosFev = leitura.nextDouble();
 
         System.out.println("Insira o valor gasto no mês de Março:");
-        Double gastosMar = leituraMar.nextDouble();
+        Double gastosMar = leitura.nextDouble();
 
         Double gastoTotal = gastosJan + gastosFev + gastosMar;
         Double gastoMediaMensal = gastoTotal/3;
@@ -23,8 +21,6 @@ public class FinancEmpresa {
         System.out.printf("Despesa Total no Trimestre(JAN, FEV, MAR): R$: %.2f%%\n", gastoTotal);
         System.out.printf("Média Mensal de Gastos no Trimestre(JAN, FEV, MAR): R$ %.2f%%\n", gastoMediaMensal);
 
-        leituraFev.close();
-        leituraJan.close();
-        leituraMar.close();
+        leitura.close();
     }
 }

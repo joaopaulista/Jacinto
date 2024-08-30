@@ -5,14 +5,13 @@ import java.util.Scanner;
 public class SalarioTrabalho {
     
     public static void main(String[] args) {
-        Scanner scannerHoraMes = new Scanner(System.in);
-        Scanner scannerSalarioHora = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Por gentileza, insira a quantidade de horas trabalhadas neste mês:");
-        int horaMes = scannerHoraMes.nextInt();
+        int horaMes = scanner.nextInt();
 
         System.out.println("Insira seu salário por hora trabalhada:");
-        Double salarioHora = scannerSalarioHora.nextDouble();
+        Double salarioHora = scanner.nextDouble();
 
         int horasNormal = 160;
 
@@ -31,7 +30,6 @@ public class SalarioTrabalho {
             System.out.print("Seu salário é: R$");
             System.out.print(salario);
         }
-        scannerHoraMes.close();
-        scannerSalarioHora.close();
+        scanner.close();
     }
 }

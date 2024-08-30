@@ -5,14 +5,13 @@ import java.util.Scanner;
 
 public class CalcularSalario {
     public static void main(String[] args) {
-        Scanner leituraSalario = new Scanner(System.in);
-        Scanner leituraPercentual = new Scanner(System.in);
+        Scanner leitura = new Scanner(System.in);
 
         System.out.println("Por gentileza, insira seu salário.");
-        Double salario = leituraSalario.nextDouble();
+        Double salario = leitura.nextDouble();
 
         System.out.println("Por gentileza, insira o reajuste salarial.");
-        Double percentual = leituraPercentual.nextDouble();
+        Double percentual = leitura.nextDouble();
 
         Double ajuste = salario * (percentual*0.01);
         Double salarioAjustado = salario + ajuste;
@@ -20,7 +19,6 @@ public class CalcularSalario {
         System.out.print("Após o reajuste, seu salário é de R$");
         System.out.print(salarioAjustado);
 
-        leituraSalario.close();
-        leituraPercentual.close();
+        leitura.close();
     }
 }

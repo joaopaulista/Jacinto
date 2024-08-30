@@ -5,14 +5,13 @@ import java.util.Scanner;
 public class MediaAluno {
     
     public static void main(String[] args) {
-        Scanner leituraNota1 = new Scanner(System.in);
-        Scanner leituraNota2 = new Scanner(System.in);
+        Scanner leituraNota = new Scanner(System.in);
 
         System.out.println("Insira a primeira nota:");
-        Double nota1 = leituraNota1.nextDouble();
+        Double nota1 = leituraNota.nextDouble();
 
         System.out.println("Insira a primeira nota:");
-        Double nota2 = leituraNota2.nextDouble();
+        Double nota2 = leituraNota.nextDouble();
 
         Double media = (nota1 + nota2)/2;
         if (media >= 6) {
@@ -24,7 +23,6 @@ public class MediaAluno {
             System.out.print("Ficando com uma média de: ");
             System.out.print(media);
         }
-        leituraNota1.close();
-        leituraNota2.close();
+        leituraNota.close();
     }
 }

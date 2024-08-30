@@ -4,14 +4,13 @@ import java.util.Scanner;
 
 public class DuracaoJogo {
     public static void main(String[] args) {
-        Scanner leituraInicio = new Scanner(System.in);
-        Scanner leituraFinal = new Scanner(System.in);
+        Scanner leitura = new Scanner(System.in);
 
         System.out.println("Insira a hora em que o jogo foi iniciado:");
-        int horaInicio = leituraInicio.nextInt();
+        int horaInicio = leitura.nextInt();
 
         System.out.println("Insira a hora em que o jogo acabou:");
-        int horaFinal = leituraFinal.nextInt();
+        int horaFinal = leitura.nextInt();
 
         if (horaFinal < horaInicio) {
             int duracaoJogoXadrez = (24 - horaInicio) + horaFinal;
@@ -22,7 +21,6 @@ public class DuracaoJogo {
             System.out.print("A duração da partida de xadrez foi de: ");
             System.out.print(duracaoJogoXadrez + "hora(s)");
         }
-        leituraFinal.close();
-        leituraInicio.close();
+        leitura.close();
     }
 }

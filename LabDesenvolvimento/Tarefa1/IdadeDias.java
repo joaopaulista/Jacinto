@@ -6,33 +6,27 @@ public class IdadeDias {
     
     public static void main(String[] args) {
         
-        Scanner scannerData = new Scanner(System.in);
-        Scanner scannerMes = new Scanner(System.in);
-        Scanner scannerAno = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Recebendo a entrada da Data
         System.out.println("Digite o dia de hoje:");
-        int data1 = scannerData.nextInt();
+        int data1 = scanner.nextInt();
 
         System.out.println("Digite o mês de hoje:");
-        int data2 = scannerMes.nextInt();
+        int data2 = scanner.nextInt();
 
         System.out.println("Digite o ano de hoje:");
-        int data3 = scannerAno.nextInt();
-
-        Scanner scannerDiaNasc = new Scanner(System.in);
-        Scanner scannerMesNasc = new Scanner(System.in);
-        Scanner scannerAnoNasc = new Scanner(System.in);
+        int data3 = scanner.nextInt();
 
         //Recebendo a entrada da Idade
         System.out.println("Digite o dia do seu nascimento:");
-        int data4 = scannerDiaNasc.nextInt();
+        int data4 = scanner.nextInt();
 
         System.out.println("Digite o mês do seu nascimento:");
-        int data5 = scannerMesNasc.nextInt();
+        int data5 = scanner.nextInt();
 
         System.out.println("Digite o ano do seu nascimento:");
-        int data6 = scannerAnoNasc.nextInt();
+        int data6 = scanner.nextInt();
 
         //Tratamento dos dados
         int hoje = (data1*1) + (data2*30) + (data3*365);
@@ -42,11 +36,6 @@ public class IdadeDias {
         System.out.print("SUA IDADE EM DIAS É: ");
         System.out.print(idade);
 
-        scannerAno.close();
-        scannerData.close();
-        scannerMes.close();
-        scannerMesNasc.close();
-        scannerAnoNasc.close();
-        scannerDiaNasc.close();
+        scanner.close();
     }
 }
