@@ -21,7 +21,7 @@ public class TesteClasse {
         Plantas plantas = new Plantas(null, null, null);
         Roupas roupas = new Roupas(null, null, null);
 
-        int escolha = 0;
+        int escolha = 1;
         //loop
         while (escolha != 0) {
             System.out.println("Escolha uma opção:");
