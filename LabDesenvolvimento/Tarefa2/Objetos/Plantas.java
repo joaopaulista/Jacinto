@@ -1,16 +1,16 @@
 package Tarefa2.Objetos;
 
-public class Bolas {
+public class Plantas {
     //Atributos
     private String formato;
     private String cor;
-    private String material;
+    private String folhagem;
 
     //Construtor
-    public Bolas(String formato, String cor, String material) {
+    public Plantas(String formato, String cor, String folhagem) {
         this.formato = formato;
         this.cor = cor;
-        this.material = material;
+        this.folhagem = folhagem;
     }
 
     //ATRIBUTOS
@@ -30,41 +30,41 @@ public class Bolas {
         this.cor = cor;
     }
 
-    public String getMaterial() {
-        return material;
+    public String getFolhagem() {
+        return folhagem;
     }
 
-    public void setMaterial(String material){
-        this.material = material;
+    public void setFolhagem(String folhagem){
+        this.folhagem = folhagem;
     }
     
     //MÉTODOS
-    public void chutar() {
-        System.out.println("Chutar a bola!");
+    public void cheirar() {
+        System.out.println("Cheirando a planta...");
     }
 
-    public void jogar() {
-        System.out.println("Jogar a bola!");
+    public void regar() {
+        System.out.println("Regando a planta...");
     }
 
     public void pegar() {
-        System.out.println("Pegar a bola!");
+        System.out.println("Pegando a planta...");
     }
 
-    //Método Exibir Informações Bolas
+    //Método Exibir Informações Plantas
     public String toString() {
-        return "bolas [formato=" + formato + ", cor=" + cor + ", material=" + material + "]";
+        return "plantas [formato=" + formato + ", cor=" + cor + ", folhagem=" + folhagem + "]";
     }
 
     //Método Principal Testar Classe
     public static void main(String[] args) {
         
-        Bolas bolas = new Bolas("esfera", "preto", "borracha");
+        Plantas plantas = new Plantas("esfera retangular", "verde escuro", "seca");
 
-        System.out.println(bolas);
+        System.out.println(plantas);
 
-        bolas.chutar();
-        bolas.jogar();
-        bolas.pegar();
+        plantas.cheirar();
+        plantas.regar();
+        plantas.pegar();
     }
 }

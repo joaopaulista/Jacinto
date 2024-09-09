@@ -1,13 +1,13 @@
 package Tarefa2.Objetos;
 
-public class Bolas {
+public class Oculos {
     //Atributos
     private String formato;
     private String cor;
     private String material;
 
     //Construtor
-    public Bolas(String formato, String cor, String material) {
+    public Oculos(String formato, String cor, String material) {
         this.formato = formato;
         this.cor = cor;
         this.material = material;
@@ -39,32 +39,32 @@ public class Bolas {
     }
     
     //MÉTODOS
-    public void chutar() {
-        System.out.println("Chutar a bola!");
+    public void usar() {
+        System.out.println("Colocando os óculos...");
     }
 
-    public void jogar() {
-        System.out.println("Jogar a bola!");
+    public void vender() {
+        System.out.println("Óculos vendido.");
     }
 
-    public void pegar() {
-        System.out.println("Pegar a bola!");
+    public void comprar() {
+        System.out.println("Óculos comprado.");
     }
 
-    //Método Exibir Informações Bolas
+    //Método Exibir Informações Óculos
     public String toString() {
-        return "bolas [formato=" + formato + ", cor=" + cor + ", material=" + material + "]";
+        return "óculos [formato=" + formato + ", cor=" + cor + ", material=" + material + "]";
     }
 
     //Método Principal Testar Classe
     public static void main(String[] args) {
         
-        Bolas bolas = new Bolas("esfera", "preto", "borracha");
+        Oculos oculos = new Oculos("redondo", "branco", "plástico");
 
-        System.out.println(bolas);
+        System.out.println(oculos);
 
-        bolas.chutar();
-        bolas.jogar();
-        bolas.pegar();
+        oculos.usar();
+        oculos.vender();
+        oculos.comprar();
     }
 }

@@ -1,16 +1,16 @@
 package Tarefa2.Objetos;
 
-public class Bolas {
+public class Roupas {
     //Atributos
     private String formato;
     private String cor;
-    private String material;
+    private String tecido;
 
     //Construtor
-    public Bolas(String formato, String cor, String material) {
+    public Roupas(String formato, String cor, String tecido) {
         this.formato = formato;
         this.cor = cor;
-        this.material = material;
+        this.tecido = tecido;
     }
 
     //ATRIBUTOS
@@ -30,41 +30,41 @@ public class Bolas {
         this.cor = cor;
     }
 
-    public String getMaterial() {
-        return material;
+    public String getTecido() {
+        return tecido;
     }
 
-    public void setMaterial(String material){
-        this.material = material;
+    public void setTecido(String tecido){
+        this.tecido = tecido;
     }
     
     //MÉTODOS
-    public void chutar() {
-        System.out.println("Chutar a bola!");
+    public void vestir() {
+        System.out.println("Vestindo a roupa...");
     }
 
-    public void jogar() {
-        System.out.println("Jogar a bola!");
+    public void lavar() {
+        System.out.println("Lavando a roupa...");
     }
 
-    public void pegar() {
-        System.out.println("Pegar a bola!");
+    public void guardar() {
+        System.out.println("Guardando a roupa...");
     }
 
-    //Método Exibir Informações Bolas
+    //Método Exibir Informações Roupas
     public String toString() {
-        return "bolas [formato=" + formato + ", cor=" + cor + ", material=" + material + "]";
+        return "roupas [formato=" + formato + ", cor=" + cor + ", tecido=" + tecido + "]";
     }
 
     //Método Principal Testar Classe
     public static void main(String[] args) {
         
-        Bolas bolas = new Bolas("esfera", "preto", "borracha");
+        Roupas roupas = new Roupas("camiseta", "verde claro", "algodão");
 
-        System.out.println(bolas);
+        System.out.println(roupas);
 
-        bolas.chutar();
-        bolas.jogar();
-        bolas.pegar();
+        roupas.vestir();
+        roupas.lavar();
+        roupas.guardar();
     }
 }

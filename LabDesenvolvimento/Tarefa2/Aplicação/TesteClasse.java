@@ -12,31 +12,39 @@ public class TesteClasse {
 
         Cachorros cachorro = new Cachorros("Golden", "marrom", "grande");
         Bolas bolas = new Bolas("esfera", "preto", "borracha");
+        Caminhao caminhao = new Caminhao(null, null, null);
+        Chuteiras chuteiras = new Chuteiras(null, null, null);
+        Escudo escudo = new Escudo(null, null, null);
+        Fruta fruta = new Fruta(null, null, null);
+        Oculos oculos = new Oculos(null, null, null);
+        Panelas panelas = new Panelas(null, null, null);
+        Plantas plantas = new Plantas(null, null, null);
+        Roupas roupas = new Roupas(null, null, null);
 
         int escolha = 0;
         //loop
-        while (escolha != 20) {
+        while (escolha != 0) {
             System.out.println("Escolha uma opção:");
-            System.out.println("1. Bolas");
-            System.out.println("2. Cachorros");
-            System.out.println("3. Caminhões");
-            System.out.println("4. Chuteiras");
-            System.out.println("5. Escudo/Brasão");
-            System.out.println("6. Frutas");
-            System.out.println("7. Óculos");
-            System.out.println("8. Panelas");
-            System.out.println("9. Plantas");
-            System.out.println("10. Roupas");
-            System.out.println("11. Sair");
-            System.out.println("12. Bolas");
-            System.out.println("13. Cachorros");
-            System.out.println("14. Caminhões");
-            System.out.println("15. Chuteiras");
-            System.out.println("16. Escudo/Brasão");
-            System.out.println("17. Frutas");
-            System.out.println("18. Óculos");
-            System.out.println("19. Panelas");
-            System.out.println("20. Plantas");
+            System.out.println("1. Chutar bola");
+            System.out.println("2. Pegar bola");
+            System.out.println("3. Brincar com o cachorro");
+            System.out.println("4. Dar de comer para o cachorro");
+            System.out.println("5. Dirigir caminhão");
+            System.out.println("6. Abastecer caminhão");
+            System.out.println("7. Usar chuteira");
+            System.out.println("8. Guardar chuteira");
+            System.out.println("9. Torcer");
+            System.out.println("10. Entristecer");
+            System.out.println("11. Comer fruta");
+            System.out.println("12. Lavar fruta");
+            System.out.println("13. Comprar óculos");
+            System.out.println("14. Usar óculos");
+            System.out.println("15. Cozinhar na panela");
+            System.out.println("16. Limpar panela");
+            System.out.println("17. Cheirar planta");
+            System.out.println("18. Regar planta");
+            System.out.println("19. Vestir roupa");
+            System.out.println("20. Lavar roupa");
             System.out.println("0. Sair");
             escolha = leitura.nextInt();
 
@@ -44,66 +52,67 @@ public class TesteClasse {
             switch (escolha) {
                 case 0:
                     System.out.println("Saindo...");
+                    escolha = 0;
                     break;
                 case 1:
-                    cachorro.brincar();
+                    bolas.chutar();
                     break;
                 case 2:
-                    cachorro.deitar();
+                    bolas.pegar();
                     break;
                 case 3:
-                    cachorro.comer();
+                    cachorro.brincar();
                     break;
                 case 4:
                     cachorro.comer();
                     break;
                 case 5:
-                    cachorro.comer();
+                    caminhao.dirigir();
                     break;
                 case 6:
-                    cachorro.comer();
+                    caminhao.abastecer();
                     break;
                 case 7:
-                    cachorro.comer();
+                    chuteiras.calcar();
                     break;
                 case 8:
-                    cachorro.comer();
+                    chuteiras.guardar();
                     break;
                 case 9:
-                    cachorro.comer();
+                    escudo.torcer();
                     break;
                 case 10:
-                    cachorro.comer();
+                    escudo.entristecer();
                     break;
                 case 11:
-                    cachorro.comer();
+                    fruta.comer();
                     break;
                 case 12:
-                    cachorro.comer();
+                    fruta.lavar();
                     break;
                 case 13:
-                    cachorro.comer();
+                    oculos.comprar();
                     break;
                 case 14:
-                    cachorro.comer();
+                    oculos.usar();
                     break;
                 case 15:
-                    cachorro.comer();
+                    panelas.cozinhar();
                     break;
                 case 16:
-                    cachorro.comer();
+                    panelas.limpar();
                     break;
                 case 17:
-                    cachorro.comer();
+                    plantas.cheirar();
                     break;
                 case 18:
-                    cachorro.comer();
+                    plantas.regar();
                     break;
                 case 19:
-                    cachorro.comer();
+                    roupas.vestir();
                     break;
                 case 20:
-                    cachorro.comer();
+                    roupas.lavar();
                     break;
                 //caso contrário:
                 default:

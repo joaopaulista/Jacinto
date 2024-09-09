@@ -1,13 +1,13 @@
 package Tarefa2.Objetos;
 
-public class Bolas {
+public class Panelas {
     //Atributos
     private String formato;
     private String cor;
     private String material;
 
     //Construtor
-    public Bolas(String formato, String cor, String material) {
+    public Panelas(String formato, String cor, String material) {
         this.formato = formato;
         this.cor = cor;
         this.material = material;
@@ -39,32 +39,32 @@ public class Bolas {
     }
     
     //MÉTODOS
-    public void chutar() {
-        System.out.println("Chutar a bola!");
+    public void cozinhar() {
+        System.out.println("Cozinhando na panela...");
     }
 
-    public void jogar() {
-        System.out.println("Jogar a bola!");
+    public void guardar() {
+        System.out.println("Guardando a panela...");
     }
 
-    public void pegar() {
-        System.out.println("Pegar a bola!");
+    public void limpar() {
+        System.out.println("Limpando a panela...");
     }
 
-    //Método Exibir Informações Bolas
+    //Método Exibir Informações Panelas
     public String toString() {
-        return "bolas [formato=" + formato + ", cor=" + cor + ", material=" + material + "]";
+        return "panelas [formato=" + formato + ", cor=" + cor + ", material=" + material + "]";
     }
 
     //Método Principal Testar Classe
     public static void main(String[] args) {
         
-        Bolas bolas = new Bolas("esfera", "preto", "borracha");
+        Panelas panelas = new Panelas("redondo", "prata", "metal");
 
-        System.out.println(bolas);
+        System.out.println(panelas);
 
-        bolas.chutar();
-        bolas.jogar();
-        bolas.pegar();
+        panelas.cozinhar();
+        panelas.guardar();
+        panelas.limpar();
     }
 }
