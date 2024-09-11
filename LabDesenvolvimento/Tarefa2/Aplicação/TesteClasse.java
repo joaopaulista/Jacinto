@@ -12,14 +12,14 @@ public class TesteClasse {
 
         Cachorros cachorro = new Cachorros("Golden", "marrom", "grande");
         Bolas bolas = new Bolas("esfera", "preto", "borracha");
-        Caminhao caminhao = new Caminhao(null, null, null);
-        Chuteiras chuteiras = new Chuteiras(null, null, null);
-        Escudo escudo = new Escudo(null, null, null);
-        Fruta fruta = new Fruta(null, null, null);
-        Oculos oculos = new Oculos(null, null, null);
-        Panelas panelas = new Panelas(null, null, null);
-        Plantas plantas = new Plantas(null, null, null);
-        Roupas roupas = new Roupas(null, null, null);
+        Caminhao caminhao = new Caminhao("Scania", "cinza", "3");
+        Chuteiras chuteiras = new Chuteiras("Nike", "rosa", "couro");
+        Escudo escudo = new Escudo("pirâmide", "preto", "setas");
+        Fruta fruta = new Fruta("Redondo", "vermelha", "lisa");
+        Oculos oculos = new Oculos("redondo", "branco", "plástico");
+        Panelas panelas = new Panelas("redondo", "prata", "metal");
+        Plantas plantas = new Plantas("redondo", "verde escuro", "seca");
+        Roupas roupas = new Roupas("camisa", "roxo", "algodão");
 
         int escolha = 1;
         //loop
@@ -118,6 +118,7 @@ public class TesteClasse {
                 default:
                     System.out.println("Opção inválida.");
             }
+            System.out.println("");
         }
         leitura.close();
     }

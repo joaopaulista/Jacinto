@@ -2,30 +2,31 @@ package Tarefa2.Aplicação;
 
 import java.util.Scanner;
 
+// Declaração Variáveis
 public class Fracao {
     private int numerador;
     private int denominador;
 
-    // Construtor para frações próprias e impróprias
+    // Construtor para frações
     public Fracao(int numerador, int denominador) {
+        // Verifica se denominador é zero
         if (denominador == 0) {
             throw new IllegalArgumentException("O denominador não pode ser zero.");
         }
+        // Atribui valor instância
         this.numerador = numerador;
         this.denominador = denominador;
         simplificar();
     }
 
-    // ... (Construtor para números mistos, se necessário)
-
-    // Método para simplificar a fração
+    // Método simplificar fração
     private void simplificar() {
         int mdc = mdc(numerador, denominador);
         numerador /= mdc;
         denominador /= mdc;
     }
 
-    // Método para calcular o MDC (Máximo Divisor Comum)
+    // Método calcular o MDC (Máximo Divisor Comum)
     private int mdc(int a, int b) {
         if (b == 0) {
             return a;
@@ -34,7 +35,7 @@ public class Fracao {
         }
     }
 
-    // Métodos para as operações
+    // Métodos operações
     public Fracao somar(Fracao outraFracao) {
         int novoNumerador = numerador * outraFracao.denominador + denominador * outraFracao.numerador;
         int novoDenominador = denominador * outraFracao.denominador;
@@ -76,12 +77,11 @@ public class Fracao {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\nEscolha uma operação:");
+            System.out.println("Escolha uma operação:");
             System.out.println("1. Soma");
             System.out.println("2. Subtração");
             System.out.println("3. Multiplicação");
             System.out.println("4. Divisão");
-
             System.out.println("5. Sair");
 
             int opcao = scanner.nextInt();
@@ -128,4 +128,3 @@ public class Fracao {
         scanner.close();
     }
 }
-    // ... (Método main com o menu e entrada de dados)
