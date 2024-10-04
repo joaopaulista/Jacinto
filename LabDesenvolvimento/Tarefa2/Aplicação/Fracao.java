@@ -26,7 +26,7 @@ public class Fracao {
         denominador /= mdc;
     }
 
-    // Método calcular o MDC (Máximo Divisor Comum)
+    // Método RECURSIVO calcular o MDC (Máximo Divisor Comum)
     private int mdc(int a, int b) {
         if (b == 0) {
             return a;
