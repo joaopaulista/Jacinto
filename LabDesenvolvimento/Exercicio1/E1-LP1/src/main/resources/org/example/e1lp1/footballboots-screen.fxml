@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.e1lp1.ChuteirasController">
+  <children>
+    <Label fx:id="messageLabel" layoutX="144.0" layoutY="341.0" prefHeight="35.0" prefWidth="205.0" text="Selecione uma ação...">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+    <Button layoutX="749.0" layoutY="359.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Voltar" />
+      <Button layoutX="677.0" layoutY="172.0" mnemonicParsing="false" onAction="#onPegarButtonClick" prefHeight="35.0" prefWidth="120.0" text="PEGAR" />
+      <ImageView fitHeight="227.0" fitWidth="395.0" layoutX="123.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@footballboots.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="677.0" layoutY="258.0" mnemonicParsing="false" onAction="#onCalcarButtonClick" prefHeight="35.0" prefWidth="120.0" text="CALÇAR" />
+      <Button layoutX="677.0" layoutY="92.0" mnemonicParsing="false" onAction="#onGuardarButtonClick" prefHeight="35.0" prefWidth="120.0" text="GUARDAR" />
+  </children>
+</AnchorPane>
