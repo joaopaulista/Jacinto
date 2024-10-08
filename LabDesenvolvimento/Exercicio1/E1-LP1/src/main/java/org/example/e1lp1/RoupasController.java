@@ -2,7 +2,6 @@ package org.example.e1lp1;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -10,7 +9,7 @@ import javafx.scene.Parent;
 import javafx.fxml.FXMLLoader;
 import java.io.IOException;
 
-public class MessageScreenController {
+public class RoupasController {
 
     @FXML
     private Label messageLabel;
@@ -18,19 +17,31 @@ public class MessageScreenController {
     @FXML
     private ImageView imageView;
 
-    @FXML
-    protected void onShowMessageButtonClick() {
-        messageLabel.setText("Esta é uma mensagem simples!");
+    private Roupas roupas;
 
-        // Carrega uma imagem (substitua pelo caminho da sua imagem)
-        Image image = new Image("file:path/to/your/image.png"); // Use o caminho correto
-        imageView.setImage(image);
+    public void initialize() {
+        roupas = new Roupas("Esfera", "Verde", "Áspera");
+    }
+
+    @FXML
+    protected void onVestirButtonClick() {
+        roupas.vestir(messageLabel);
+    }
+
+    @FXML
+    protected void onLavarButtonClick() {
+        roupas.lavar(messageLabel);
+    }
+
+    @FXML
+    protected void onGuardarButtonClick() {
+        roupas.guardar(messageLabel);
     }
 
     @FXML
     protected void onBackButtonClick() throws IOException {
         // Carrega a tela inicial
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("view-platform.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("start-screen.fxml"));
         Parent root = fxmlLoader.load();
 
         // Obtém a janela atual e troca a cena
