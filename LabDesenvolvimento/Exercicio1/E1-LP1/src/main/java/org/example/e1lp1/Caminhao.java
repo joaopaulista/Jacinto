@@ -1,6 +1,10 @@
 package org.example.e1lp1;
 
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
+import java.util.Objects;
 
 public class Caminhao {
 

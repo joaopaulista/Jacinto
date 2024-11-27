@@ -24,9 +24,10 @@ public class BolasController {
         bolas = new Bolas("Esfera", "Preta", "Borracha");
     }
 
+    // FUNÇÕES DOS BOTÕES
     @FXML
     protected void onChutarButtonClick() {
-        bolas.chutar(messageLabel);
+        bolas.chutar(messageLabel, imageView);
     }
 
     @FXML
@@ -41,12 +42,12 @@ public class BolasController {
 
     @FXML
     protected void onBackButtonClick() throws IOException {
-        // Carrega a tela inicial
+        // CARREGA A TELA INICIAL
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("start-screen.fxml"));
         Parent root = fxmlLoader.load();
 
-        // Obtém a janela atual e troca a cena
-        Stage stage = (Stage) messageLabel.getScene().getWindow(); // Usa qualquer componente para obter a Stage
+        // PROPORÇÕES PARA A TROCA DE TELA - STAGE
+        Stage stage = (Stage) messageLabel.getScene().getWindow();
         stage.setScene(new Scene(root, 900, 500));
     }
 }

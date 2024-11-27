@@ -12,11 +12,12 @@ import java.io.IOException;
 
 public class CaminhaoController {
 
+    public javafx.scene.image.ImageView imageView;
     @FXML
     private Label messageLabel;
 
     @FXML
-    private ImageView imageView;
+    private ImageView ImageView;
 
     private Caminhao caminhao;
 
@@ -41,12 +42,12 @@ public class CaminhaoController {
 
     @FXML
     protected void onBackButtonClick() throws IOException {
-        // Carrega a tela inicial
+        // CARREGA A TELA INICIAL
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("start-screen.fxml"));
         Parent root = fxmlLoader.load();
 
-        // Obtém a janela atual e troca a cena
-        Stage stage = (Stage) messageLabel.getScene().getWindow(); // Usa qualquer componente para obter a Stage
+        // TROCA A TELA
+        Stage stage = (Stage) messageLabel.getScene().getWindow();
         stage.setScene(new Scene(root, 900, 500));
     }
 }
