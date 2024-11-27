@@ -1,6 +1,10 @@
 package org.example.e1lp1;
 
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
+import java.util.Objects;
 
 public class Bolas {
 
@@ -8,7 +12,7 @@ public class Bolas {
     private String cor;
     private String material;
 
-    //Construtor
+    //CONSTRUTOR
     public Bolas(String formato, String cor, String material) {
         this.formato = formato;
         this.cor = cor;
@@ -41,24 +45,27 @@ public class Bolas {
     }
 
     //MÉTODOS
-    public void chutar(Label messageLabel) {
+    public void chutar(Label messageLabel, ImageView imageView) {
         messageLabel.setText("Golaçooo...");
+
+        Image gif = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/gifs/ball1.gif")));
+        imageView.setImage(gif);
     }
 
     public void jogar(Label messageLabel) {
-        messageLabel.setText("Jogar demais, craque.");
+        messageLabel.setText("Joga muito, craque.");
     }
 
     public void pegar(Label messageLabel) {
         messageLabel.setText("Penalti");
     }
 
-    //Método Exibir Informações Bolas
+    // MÉTODO EXIBIR INFORMAÇÕES BOLAS
     public String toString() {
         return "bolas [formato=" + formato + ", cor=" + cor + ", material=" + material + "]";
     }
 
-    //Método Principal Testar Classe
+    // MÉTODO PRINCIPAL TESTAR CLASSE
     public static void main(String[] args) {
 
         Label messageLabel = new Label();

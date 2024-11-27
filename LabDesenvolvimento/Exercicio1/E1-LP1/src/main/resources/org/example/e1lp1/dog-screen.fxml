@@ -17,7 +17,7 @@
       <Button layoutX="592.0" layoutY="205.0" mnemonicParsing="false" onAction="#onDarAComerButtonClick" prefHeight="26.0" prefWidth="134.0" text="DAR A COMER" />
       <ImageView fitHeight="245.0" fitWidth="427.0" layoutX="65.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@dogs.png" />
+            <Image url="@dog.png" />
          </image>
       </ImageView>
       <Button layoutX="592.0" layoutY="302.0" mnemonicParsing="false" onAction="#onDeitarButtonClick" prefHeight="26.0" prefWidth="134.0" text="DEITAR" />

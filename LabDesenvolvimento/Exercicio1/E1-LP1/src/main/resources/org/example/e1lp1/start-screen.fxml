@@ -5,22 +5,67 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.e1lp1.StartController">
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.e1lp1.StartController"> <!-- Azul Claro -->
     <children>
-        <Label fx:id="welcomeText" layoutX="100.0" layoutY="26.0" prefHeight="42.0" prefWidth="338.0" text="Bem vindo! Selecione um objeto para interagir:">
-         <font>
-            <Font size="14.0" />
-         </font></Label>
-      <Button layoutX="104.0" layoutY="101.0" mnemonicParsing="false" onAction="#onBolaButtonClick" prefHeight="42.0" prefWidth="158.0" text="BOLA" />
-        <Button layoutX="104.0" layoutY="186.0" mnemonicParsing="false" onAction="#onChuteirasButtonClick" prefHeight="42.0" prefWidth="158.0" text="CHUTEIRAS" />
-        <Button layoutX="759.0" layoutY="372.0" mnemonicParsing="false" onAction="#onExitButtonClick" text="Sair" />
-      <Button layoutX="104.0" layoutY="267.0" mnemonicParsing="false" onAction="#onOculosButtonClick" prefHeight="42.0" prefWidth="158.0" text="ÓCULOS" />
-      <Button layoutX="375.0" layoutY="101.0" mnemonicParsing="false" onAction="#onCachorroButtonClick" prefHeight="42.0" prefWidth="158.0" text="CACHORRO" />
-      <Button layoutX="375.0" layoutY="186.0" mnemonicParsing="false" onAction="#onEscudoButtonClick" prefHeight="42.0" prefWidth="158.0" text="ESCUDO" />
-      <Button layoutX="375.0" layoutY="267.0" mnemonicParsing="false" onAction="#onPanelaButtonClick" prefHeight="42.0" prefWidth="158.0" text="PANELA" />
-      <Button layoutX="637.0" layoutY="101.0" mnemonicParsing="false" onAction="#onCaminhaoButtonClick" prefHeight="42.0" prefWidth="158.0" text="CAMINHÃO" />
-      <Button layoutX="637.0" layoutY="186.0" mnemonicParsing="false" onAction="#onFrutaButtonClick" prefHeight="42.0" prefWidth="158.0" text="FRUTA" />
-      <Button layoutX="637.0" layoutY="267.0" mnemonicParsing="false" onAction="#onPlantaButtonClick" prefHeight="42.0" prefWidth="158.0" text="PLANTA" />
-      <Button layoutX="375.0" layoutY="356.0" mnemonicParsing="false" onAction="#onRoupaButtonClick" prefHeight="42.0" prefWidth="158.0" text="ROUPA" />
+        <Label fx:id="welcomeText" layoutX="100.0" layoutY="26.0" prefHeight="42.0" prefWidth="379.0" text="Bem vindo! Selecione um objeto para interagir:">
+            <font>
+                <Font name="System Bold Italic" size="15.5" />
+            </font>
+        </Label>
+        <Button layoutX="104.0" layoutY="101.0" mnemonicParsing="false" onAction="#onBolaButtonClick" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #888888; -fx-border-radius: 5; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);" text="BOLA">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="104.0" layoutY="186.0" mnemonicParsing="false" onAction="#onChuteirasButtonClick" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #888888; -fx-border-radius: 5; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);" text="CHUTEIRAS">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="759.0" layoutY="372.0" mnemonicParsing="false" onAction="#onExitButtonClick" style="-fx-background-color: #FFFFFF; -fx-border-color: #888888; -fx-border-radius: 5; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);" text="SAIR">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="104.0" layoutY="267.0" mnemonicParsing="false" onAction="#onOculosButtonClick" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #888888; -fx-border-radius: 5; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);" text="ÓCULOS">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="375.0" layoutY="101.0" mnemonicParsing="false" onAction="#onCachorroButtonClick" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #888888; -fx-border-radius: 5; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);" text="CACHORRO">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="375.0" layoutY="186.0" mnemonicParsing="false" onAction="#onEscudoButtonClick" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #888888; -fx-border-radius: 5; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);" text="ESCUDO">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="375.0" layoutY="267.0" mnemonicParsing="false" onAction="#onPanelaButtonClick" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #888888; -fx-border-radius: 5; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);" text="PANELA">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="637.0" layoutY="101.0" mnemonicParsing="false" onAction="#onCaminhaoButtonClick" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #888888; -fx-border-radius: 5; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);" text="CAMINHÃO">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="637.0" layoutY="186.0" mnemonicParsing="false" onAction="#onFrutaButtonClick" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #888888; -fx-border-radius: 5; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);" text="FRUTA">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="637.0" layoutY="267.0" mnemonicParsing="false" onAction="#onPlantaButtonClick" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #888888; -fx-border-radius: 5; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);" text="PLANTA">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="375.0" layoutY="356.0" mnemonicParsing="false" onAction="#onRoupaButtonClick" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #888888; -fx-border-radius: 5; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);" text="ROUPA">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
     </children>
 </AnchorPane>

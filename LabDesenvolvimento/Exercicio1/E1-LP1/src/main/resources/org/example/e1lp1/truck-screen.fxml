@@ -15,11 +15,13 @@
          </font></Label>
     <Button layoutX="426.0" layoutY="425.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Voltar" />
       <Button layoutX="592.0" layoutY="205.0" mnemonicParsing="false" onAction="#onAbastecerButtonClick" prefHeight="26.0" prefWidth="134.0" text="ABASTECER" />
-      <ImageView fitHeight="245.0" fitWidth="427.0" layoutX="71.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@trucks.png" />
-         </image>
+
+      <ImageView fx:id="imageView" fitHeight="249.0" fitWidth="389.0" layoutX="82.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="@trucks.png" />
+          </image>
       </ImageView>
+
       <Button layoutX="592.0" layoutY="302.0" mnemonicParsing="false" onAction="#onDesligarButtonClick" prefHeight="26.0" prefWidth="134.0" text="DESLIGAR" />
       <Button layoutX="592.0" layoutY="112.0" mnemonicParsing="false" onAction="#onDirigirButtonClick" prefHeight="26.0" prefWidth="134.0" text="DIRIGIR" />
   </children>
