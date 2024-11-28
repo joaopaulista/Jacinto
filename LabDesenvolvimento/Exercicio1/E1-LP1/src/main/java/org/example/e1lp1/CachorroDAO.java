@@ -1,4 +1,4 @@
 package org.example.e1lp1;
 
-public class Bolas {
+public class CachorroDAO {
 }
